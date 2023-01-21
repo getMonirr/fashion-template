@@ -1,167 +1,314 @@
-   <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Penguin Fashion</title>
-        <!-- tailwind  -->
-        <link rel="stylesheet" href="./assets/styles/styles.css">
-    </head>
-    <body>
-        <!-- header start -->
-        <header class="bg-penguin-bg pb-32">
-            <!-- navbar -->
-            <div class="container flex flex-col md:flex-row gap-4 md:gap-0 items-center justify-between py-10 px-4 mx-auto ">
-                <div class="logo">
-                    <img class="w-72 h-10" src="./assets/images/logo.png" alt="logo">
-                </div>
-                <nav class="flex gap-3 md:gap-4 align-top">
-                    <a href="#">Home</a>
-                    <a href="#">Product</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Contact Us</a>
-                </nav>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penguin Fashion</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind  -->
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="bg-penguin-bg pb-32">
+      <!-- navbar -->
+      <div
+        class="container flex flex-col md:flex-row gap-4 md:gap-0 items-center justify-between py-10 px-4 mx-auto"
+      >
+        <div class="logo">
+          <img class="w-72 h-10" src="./assets/images/logo.png" alt="logo" />
+        </div>
+        <nav class="flex gap-3 md:gap-4 align-top">
+          <a href="#">Home</a>
+          <a href="#">Product</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+        </nav>
+      </div>
+      <!-- banner section -->
+      <div class="container mx-auto px-4">
+        <div class="banner-container md:flex items-center gap-44">
+          <div class="banner-content md:w-1/2 mb-10 md:mb-0">
+            <h1
+              class="md:text-7xl text-3xl uppercase text-penguin-para font-bold md:leading-penguin-header font-mono"
+            >
+              <span class="text-penguin-color">Be the Penguin</span>
+              <br class="" />
+              of winter
+            </h1>
+            <p class="leading-7 text-base">
+              Lorem Ipsum is simply dummy text of the printing <br />
+              and typesetting industry.
+            </p>
+            <button
+              class="bg-gradient-to-b from-gradient-1 to-gradient-2 py-5 px-6 md:px-9 rounded-lg text-white font-medium uppercase flex items-center gap-2 mt-2"
+            >
+              <img
+                class="w-5 h-5"
+                src="./assets/icons/shopping-cart 1.png"
+                alt="shopping-cart"
+              />
+              Buy Now
+            </button>
+          </div>
+          <div class="banner-img md:w-1/2">
+            <img src="./assets/images/model.png" alt="banner img" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- main -->
+    <main>
+      <!-- women-jacket -->
+      <section class="women-jacket">
+        <div class="container mx-auto px-4 mb-24">
+          <h1 class="text-4xl mt-12 mb-5 font-bold text-penguin-para uppercase">
+            Women jacket
+          </h1>
+          <div
+            class="jackets grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7"
+          >
+            <div class="jacket shadow-lg p-4 rounded-3xl">
+              <div class="bg-neutral-200 rounded-3xl p-5">
+                <img src="./assets/images/jacket-1.png" alt="jacket" />
+              </div>
+              <h2 class="font-bold text-2xl my-4 text-penguin-para pl-3">
+                Yellow Coat jacket
+              </h2>
+              <p class="text-base text-penguin-para mb-3 pl-3">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
+                possimus quos sint eum officiis dolore?
+              </p>
+              <div class="jacket-footer flex justify-between items-center">
+                <p class="font-bolder text-penguin-color text-4xl pl-3">$300</p>
+                <button
+                  class="bg-gradient-to-b from-gradient-1 to-gradient-2 py-5 px-6 md:px-9 rounded-lg text-white font-medium uppercase flex items-center gap-2 mt-2"
+                >
+                  <img
+                    class="w-5 h-5"
+                    src="./assets/icons/shopping-cart 1.png"
+                    alt="shopping-cart"
+                  />
+                  Buy Now
+                </button>
+              </div>
             </div>
-            <!-- banner section -->
-            <div class="container mx-auto px-4">
-                <div class="banner-container md:flex items-center gap-44">
-                    <div class="banner-content md:w-1/2 mb-10 md:mb-0">
-                        <h1 class="md:text-7xl text-3xl uppercase text-penguin-para font-bold md:leading-penguin-header"><span class="text-penguin-color">Be the Penguin</span> <br class=""> of winter</h1>
-                        <p class="leading-7 text-base">Lorem Ipsum is simply dummy text of the printing <br>
-                            and typesetting industry.</p>
-                        <button class=" bg-gradient-to-b from-gradient-1 to-gradient-2 py-5 px-6 md:px-9 rounded-lg text-white font-medium uppercase flex items-center gap-2 mt-2"><img class="w-5 h-5" src="./assets/icons/shopping-cart 1.png" alt="shopping-cart"> Buy Now</button>
-                    </div>
-                    <div class="banner-img md:w-1/2">
-                        <img src="./assets/images/model.png" alt="banner img">
-                    </div>
-                </div>
+            <div class="jacket shadow-lg p-4 rounded-3xl">
+              <div class="bg-neutral-200 rounded-3xl p-5">
+                <img src="./assets/images/jacket-2.png" alt="jacket" />
+              </div>
+              <h2 class="font-bold text-2xl my-4 text-penguin-para pl-3">
+                Ladies Jacket
+              </h2>
+              <p class="text-base text-penguin-para mb-3 pl-3">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
+                possimus quos sint eum officiis dolore?
+              </p>
+              <div class="jacket-footer flex justify-between items-center">
+                <p class="font-bolder text-penguin-color text-4xl pl-3">$300</p>
+                <button
+                  class="bg-gradient-to-b from-gradient-1 to-gradient-2 py-5 px-6 md:px-9 rounded-lg text-white font-medium uppercase flex items-center gap-2 mt-2"
+                >
+                  <img
+                    class="w-5 h-5"
+                    src="./assets/icons/shopping-cart 1.png"
+                    alt="shopping-cart"
+                  />
+                  Buy Now
+                </button>
+              </div>
             </div>
-        </header>
-        <!-- header end -->
-        <!-- main -->
-        <main>
-            <!-- women-jacket -->
-            <section class="women-jacket">
-                <div class="container mx-auto px-4 mb-24">
-                    <h1 class="text-4xl mt-12 mb-5 font-bold text-penguin-para uppercase ">Women jacket</h1>
-                    <div class="jackets grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7">
-                        <div class="jacket shadow-lg p-4 rounded-3xl">
-                            <div class="bg-neutral-200 rounded-3xl p-5">
-                                <img src="./assets/images/jacket-1.png" alt="jacket">
-                            </div>
-                            <h2 class="font-bold text-2xl my-4 text-penguin-para pl-3">Yellow Coat jacket</h2>
-                            <p class="text-base text-penguin-para mb-3 pl-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem possimus quos sint eum officiis dolore?</p>
-                            <div class="jacket-footer flex justify-between items-center">
-                                <p class="font-bolder text-penguin-color text-4xl pl-3">$300</p>
-                                <button class=" bg-gradient-to-b from-gradient-1 to-gradient-2 py-5 px-6 md:px-9 rounded-lg text-white font-medium uppercase flex items-center gap-2 mt-2"><img class="w-5 h-5" src="./assets/icons/shopping-cart 1.png" alt="shopping-cart"> Buy Now</button>
-                            </div>
-                        </div>
-                        <div class="jacket shadow-lg p-4 rounded-3xl">
-                            <div class="bg-neutral-200 rounded-3xl p-5">
-                                <img src="./assets/images/jacket-2.png" alt="jacket">
-                            </div>
-                            <h2 class="font-bold text-2xl my-4 text-penguin-para pl-3">Ladies Jacket </h2>
-                            <p class="text-base text-penguin-para mb-3 pl-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem possimus quos sint eum officiis dolore?</p>
-                            <div class="jacket-footer flex justify-between items-center">
-                                <p class="font-bolder text-penguin-color text-4xl pl-3">$300</p>
-                                <button class=" bg-gradient-to-b from-gradient-1 to-gradient-2 py-5 px-6 md:px-9 rounded-lg text-white font-medium uppercase flex items-center gap-2 mt-2"><img class="w-5 h-5" src="./assets/icons/shopping-cart 1.png" alt="shopping-cart"> Buy Now</button>
-                            </div>
-                        </div>
-                        <div class="jacket shadow-lg p-4 rounded-3xl">
-                            <div class="bg-neutral-200 rounded-3xl p-5">
-                                <img src="./assets/images/jacket-3.png" alt="jacket">
-                            </div>
-                            <h2 class="font-bold text-2xl my-4 text-penguin-para pl-3">Woman Leather Jacket </h2>
-                            <p class="text-base text-penguin-para mb-3 pl-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem possimus quos sint eum officiis dolore?</p>
-                            <div class="jacket-footer flex justify-between items-center">
-                                <p class="font-bolder text-penguin-color text-4xl pl-3">$300</p>
-                                <button class=" bg-gradient-to-b from-gradient-1 to-gradient-2 py-5 px-6 md:px-9 rounded-lg text-white font-medium uppercase flex items-center gap-2 mt-2"><img class="w-5 h-5" src="./assets/icons/shopping-cart 1.png" alt="shopping-cart"> Buy Now</button>
-                            </div>
-                        </div>
-                        
-                    </div>
+            <div class="jacket shadow-lg p-4 rounded-3xl">
+              <div class="bg-neutral-200 rounded-3xl p-5">
+                <img src="./assets/images/jacket-3.png" alt="jacket" />
+              </div>
+              <h2 class="font-bold text-2xl my-4 text-penguin-para pl-3">
+                Woman Leather Jacket
+              </h2>
+              <p class="text-base text-penguin-para mb-3 pl-3">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
+                possimus quos sint eum officiis dolore?
+              </p>
+              <div class="jacket-footer flex justify-between items-center">
+                <p class="font-bolder text-penguin-color text-4xl pl-3">$300</p>
+                <button
+                  class="bg-gradient-to-b from-gradient-1 to-gradient-2 py-5 px-6 md:px-9 rounded-lg text-white font-medium uppercase flex items-center gap-2 mt-2"
+                >
+                  <img
+                    class="w-5 h-5"
+                    src="./assets/icons/shopping-cart 1.png"
+                    alt="shopping-cart"
+                  />
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- man jacket -->
+      <section class="women-jacket">
+        <div class="container mx-auto px-4 mb-24 mt-20">
+          <h1 class="text-4xl mt-12 mb-5 font-bold text-penguin-para uppercase">
+            Man Jacket
+          </h1>
+          <div
+            class="jackets grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7"
+          >
+            <div class="jacket shadow-lg p-4 rounded-3xl">
+              <div class="bg-neutral-200 rounded-3xl p-5">
+                <img src="./assets/images/jacket-4.png" alt="jacket" />
+              </div>
+              <h2 class="font-bold text-2xl my-4 text-penguin-para pl-3">
+                Snowboard Jacket Mens
+              </h2>
+              <p class="text-base text-penguin-para mb-3 pl-3">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
+                possimus quos sint eum officiis dolore?
+              </p>
+              <div class="jacket-footer flex justify-between items-center">
+                <p class="font-bolder text-penguin-color text-4xl pl-3">$300</p>
+                <button
+                  class="bg-gradient-to-b from-gradient-1 to-gradient-2 py-5 px-6 md:px-9 rounded-lg text-white font-medium uppercase flex items-center gap-2 mt-2"
+                >
+                  <img
+                    class="w-5 h-5"
+                    src="./assets/icons/shopping-cart 1.png"
+                    alt="shopping-cart"
+                  />
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <div class="jacket shadow-lg p-4 rounded-3xl">
+              <div class="bg-neutral-200 rounded-3xl p-5">
+                <img src="./assets/images/jacket-5.png" alt="jacket" />
+              </div>
+              <h2 class="font-bold text-2xl my-4 text-penguin-para pl-3">
+                Man Leather Jackets
+              </h2>
+              <p class="text-base text-penguin-para mb-3 pl-3">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
+                possimus quos sint eum officiis dolore?
+              </p>
+              <div class="jacket-footer flex justify-between items-center">
+                <p class="font-bolder text-penguin-color text-4xl pl-3">$300</p>
+                <button
+                  class="bg-gradient-to-b from-gradient-1 to-gradient-2 py-5 px-6 md:px-9 rounded-lg text-white font-medium uppercase flex items-center gap-2 mt-2"
+                >
+                  <img
+                    class="w-5 h-5"
+                    src="./assets/icons/shopping-cart 1.png"
+                    alt="shopping-cart"
+                  />
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <div class="jacket shadow-lg p-4 rounded-3xl">
+              <div class="bg-neutral-200 rounded-3xl p-5">
+                <img src="./assets/images/jacket-6.png" alt="jacket" />
+              </div>
+              <h2 class="font-bold text-2xl my-4 text-penguin-para pl-3">
+                Man Casual Jackets
+              </h2>
+              <p class="text-base text-penguin-para mb-3 pl-3">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
+                possimus quos sint eum officiis dolore?
+              </p>
+              <div class="jacket-footer flex justify-between items-center">
+                <p class="font-bolder text-penguin-color text-4xl pl-3">$300</p>
+                <button
+                  class="bg-gradient-to-b from-gradient-1 to-gradient-2 py-5 px-6 md:px-9 rounded-lg text-white font-medium uppercase flex items-center gap-2 mt-2"
+                >
+                  <img
+                    class="w-5 h-5"
+                    src="./assets/icons/shopping-cart 1.png"
+                    alt="shopping-cart"
+                  />
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- featured section -->
+      <section class="feature-section">
+        <div class="container mx-auto px-4">
+          <h1
+            class="text-4xl mt-12 mb-10 font-bold text-penguin-para uppercase"
+          >
+            Our Featured
+          </h1>
+          <div
+            class="featured-container flex flex-col-reverse md:flex-row items-center justify-between gap-20"
+          >
+            <div class="content md:w-1/2 space-y-6">
+              <div
+                class="content flex items-center gap-9 shadow-lg rounded-xl p-5"
+              >
+                <img
+                  class="w-20 h-20"
+                  src="./assets/images/box.png"
+                  alt="box"
+                />
+                <div>
+                  <h3>Find the Perfect Fit</h3>
+                  <p>
+                    Everybody is different, which is why we offer styles for
+                    every body.
+                  </p>
                 </div>
-            </section>
-            <!-- man jacket -->
-            <section class="women-jacket">
-                <div class="container mx-auto px-4 mb-24 mt-20">
-                    <h1 class="text-4xl mt-12 mb-5 font-bold text-penguin-para uppercase ">Man Jacket</h1>
-                    <div class="jackets grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7">
-                        <div class="jacket shadow-lg p-4 rounded-3xl">
-                            <div class="bg-neutral-200 rounded-3xl p-5">
-                                <img src="./assets/images/jacket-4.png" alt="jacket">
-                            </div>
-                            <h2 class="font-bold text-2xl my-4 text-penguin-para pl-3">Snowboard Jacket Mens</h2>
-                            <p class="text-base text-penguin-para mb-3 pl-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem possimus quos sint eum officiis dolore?</p>
-                            <div class="jacket-footer flex justify-between items-center">
-                                <p class="font-bolder text-penguin-color text-4xl pl-3">$300</p>
-                                <button class=" bg-gradient-to-b from-gradient-1 to-gradient-2 py-5 px-6 md:px-9 rounded-lg text-white font-medium uppercase flex items-center gap-2 mt-2"><img class="w-5 h-5" src="./assets/icons/shopping-cart 1.png" alt="shopping-cart"> Buy Now</button>
-                            </div>
-                        </div>
-                        <div class="jacket shadow-lg p-4 rounded-3xl">
-                            <div class="bg-neutral-200 rounded-3xl p-5">
-                                <img src="./assets/images/jacket-5.png" alt="jacket">
-                            </div>
-                            <h2 class="font-bold text-2xl my-4 text-penguin-para pl-3">Man Leather Jackets</h2>
-                            <p class="text-base text-penguin-para mb-3 pl-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem possimus quos sint eum officiis dolore?</p>
-                            <div class="jacket-footer flex justify-between items-center">
-                                <p class="font-bolder text-penguin-color text-4xl pl-3">$300</p>
-                                <button class=" bg-gradient-to-b from-gradient-1 to-gradient-2 py-5 px-6 md:px-9 rounded-lg text-white font-medium uppercase flex items-center gap-2 mt-2"><img class="w-5 h-5" src="./assets/icons/shopping-cart 1.png" alt="shopping-cart"> Buy Now</button>
-                            </div>
-                        </div>
-                        <div class="jacket shadow-lg p-4 rounded-3xl">
-                            <div class="bg-neutral-200 rounded-3xl p-5">
-                                <img src="./assets/images/jacket-6.png" alt="jacket">
-                            </div>
-                            <h2 class="font-bold text-2xl my-4 text-penguin-para pl-3">Man Casual Jackets</h2>
-                            <p class="text-base text-penguin-para mb-3 pl-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem possimus quos sint eum officiis dolore?</p>
-                            <div class="jacket-footer flex justify-between items-center">
-                                <p class="font-bolder text-penguin-color text-4xl pl-3">$300</p>
-                                <button class=" bg-gradient-to-b from-gradient-1 to-gradient-2 py-5 px-6 md:px-9 rounded-lg text-white font-medium uppercase flex items-center gap-2 mt-2"><img class="w-5 h-5" src="./assets/icons/shopping-cart 1.png" alt="shopping-cart"> Buy Now</button>
-                            </div>
-                        </div>
-                        
-                    </div>
+              </div>
+              <div
+                class="content flex items-center gap-9 shadow-lg rounded-xl p-5"
+              >
+                <img
+                  class="w-20 h-20"
+                  src="./assets/images/house.png"
+                  alt="box"
+                />
+                <div>
+                  <h3>Find the Perfect Fit</h3>
+                  <p>
+                    Everybody is different, which is why we offer styles for
+                    every body.
+                  </p>
                 </div>
-            </section>
-            <!-- featured section -->
-            <section class="feature-section">
-                <div class="container mx-auto px-4">
-                    <h1 class="text-4xl mt-12 mb-10 font-bold text-penguin-para uppercase ">Our Featured</h1>
-                    <div class="featured-container flex flex-col-reverse md:flex-row items-center justify-between gap-20">
-                        <div class="content md:w-1/2 space-y-6">
-                            <div class="content flex items-center gap-9 shadow-lg rounded-xl p-5">
-                                <img class="w-20 h-20" src="./assets/images/box.png" alt="box">
-                                <div>
-                                    <h3>Find the Perfect Fit</h3>
-                                    <p>Everybody is different, which is why we
-                                        offer styles for every body.</p>
-                                </div>
-                            </div>
-                            <div class="content flex items-center gap-9 shadow-lg rounded-xl p-5">
-                                <img class="w-20 h-20" src="./assets/images/house.png" alt="box">
-                                <div>
-                                    <h3>Find the Perfect Fit</h3>
-                                    <p>Everybody is different, which is why we
-                                        offer styles for every body.</p>
-                                </div>
-                            </div>
-                            <div class="content flex items-center gap-9 shadow-lg rounded-xl p-5">
-                                <img class="w-20 h-20" src="./assets/images/question.png" alt="box">
-                                <div>
-                                    <h3>Find the Perfect Fit</h3>
-                                    <p>Everybody is different, which is why we
-                                        offer styles for every body.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img md:w-1/2">
-                            <img src="./assets/images/shopping.png" alt="shopping">
-                        </div>
-                    </div>
+              </div>
+              <div
+                class="content flex items-center gap-9 shadow-lg rounded-xl p-5"
+              >
+                <img
+                  class="w-20 h-20"
+                  src="./assets/images/question.png"
+                  alt="box"
+                />
+                <div>
+                  <h3>Find the Perfect Fit</h3>
+                  <p>
+                    Everybody is different, which is why we offer styles for
+                    every body.
+                  </p>
                 </div>
-            </section>
-        </main>
-    </body>
-    </html>
+              </div>
+            </div>
+            <div class="img md:w-1/2">
+              <img src="./assets/images/shopping.png" alt="shopping" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
